@@ -1,21 +1,17 @@
-/* Copyright(c) 2023 Evgeny Vovk All rights reserved.
+/* Copyright(c) 2023 Emmanuel Fofeyin All rights reserved.
    Created by : Emmanuel Fofeyin
-   Created on : September 2023
-   TEJ3M-Unit2-02.ino File.
+   Created on : February 2023
+   TEJ3M-Unit2-01.ino File.
  */
-
-int blinkTime = 1000;
-
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+void setup()
+{
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void loop() {
+void loop()
+{
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(blinkTime);
+  delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-
-  blinkTime += 1000;
+  delay(1000); // Wait for 1000 millisecond(s)
 }
